@@ -4,54 +4,54 @@
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
-  src: local(''),
+  src: local('PT Sans'), local('PTSans-Regular'),
     url('../fonts/ptsans.woff2') format('woff2'),
-    url('../fonts/ptsans.woff') format('woff')
+    url('../fonts/ptsans.woff') format('woff');
 }
 
 @font-face {
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
-  src: local(''),
+  src: local('PT Sans Bold'), local('PTSans-Bold'),
     url('../fonts/ptsansbold.woff2') format('woff2'),
-    url('../fonts/ptsansbold.woff') format('woff')
+    url('../fonts/ptsansbold.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Cuprum';
   font-style: normal;
   font-weight: 400;
-  src: local(''),
+  src: local('Cuprum Regular'), local('Cuprum-Regular'),
     url('../fonts/cuprum.woff2') format('woff2'),
-    url('../fonts/cuprum.woff') format('woff')
+    url('../fonts/cuprum.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Cuprum';
   font-style: italic;
   font-weight: 400;
-  src: local(''),
+  src: local('Cuprum Italic'), local('Cuprum-Italic'),
     url('../fonts/cuprumitalic.woff2') format('woff2'),
-    url('../fonts/cuprumitalic.woff') format('woff')
+    url('../fonts/cuprumitalic.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Cuprum';
   font-style: normal;
   font-weight: 700;
-  src: local(''),
+  src: local('Cuprum Bold'), local('Cuprum-Bold'),
     url('../fonts/cuprumbold.woff2') format('woff2'),
-    url('../fonts/cuprumbold.woff') format('woff')
+    url('../fonts/cuprumbold.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Cuprum';
   font-style: italic;
   font-weight: 700;
-  src: local(''),
+  src: local('Cuprum Bold Italic'), local('Cuprum-BoldItalic'),
     url('../fonts/cuprumbolditalic.woff2') format('woff2'),
-    url('../fonts/cuprumbolditalic.woff') format('woff')
+    url('../fonts/cuprumbolditalic.woff') format('woff');
 }
 
 /* Variables */
@@ -93,8 +93,11 @@
   --success: #5FBB2D;
   --top-background: #F3F7F9;
   --user-nav-background: rgba(0, 0, 0, 0.0001);
+  --white-opacity: rgba(255, 255, 255, 0.3);
   --white: #FFFFFF;
   --whisper: #E5E5E5;
+  --font-cuprum: 'Cuprum', Arial, sans-serif;
+  --font-ptsans: 'PT Sans', Arial, sans-serif;
 }
 
 /* Global */
@@ -112,7 +115,7 @@ img {
 }
 
 .title {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: var(--font-cuprum);
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
@@ -121,7 +124,7 @@ img {
 }
 
 .descrtiption {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: var(--font-ptsans);
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -136,7 +139,7 @@ img {
 }
 
 .main-header-top {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: var(--font-cuprum);
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -208,7 +211,7 @@ img {
 }
 
 .text-italic {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: var(--font-cuprum);
   font-style: italic;
   font-weight: 400;
   font-size: 16px;
@@ -217,7 +220,7 @@ img {
 }
 
 .contact-address {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: var(--font-cuprum);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -226,7 +229,7 @@ img {
 }
 
 .header-phone {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: var(--font-cuprum);
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
@@ -240,7 +243,7 @@ img {
 
 .user-nav-link,
 .user-nav a {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: var(--font-cuprum);
   font-style: normal;
   font-weight: 400;
   font-size: 21px;
@@ -252,7 +255,7 @@ img {
 }
 
 .user-link {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: var(--font-cuprum);
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -284,7 +287,7 @@ img {
 /* Main navigation */
 
 .main-nav-list {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: var(--font-cuprum);
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -313,7 +316,7 @@ img {
 /* Button */
 
 .btn {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: var(--font-cuprum);
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -323,9 +326,8 @@ img {
 }
 
 .catalog-btn {
-  background: var(--white);
+  background: var(--white-opacity);
   color: var(--white);
-  opacity: 0.3;
 }
 
 .catalog-btn:hover,
@@ -358,10 +360,11 @@ img {
 }
 
 .sans-btn {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: var(--font-ptsans);
   font-size: 17px;
   line-height: 18px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .filter-button {
@@ -427,7 +430,7 @@ img {
 /* Breadcrumbs */
 
 .breadcrumbs {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: var(--font-ptsans);
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -444,7 +447,7 @@ img {
 /* Filters */
 
 .catalog-title {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: var(--font-ptsans);
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -454,7 +457,7 @@ img {
 }
 
 .filter legend {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: var(--font-ptsans);
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -463,7 +466,7 @@ img {
 }
 
 .range-input {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: var(--font-ptsans);
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -473,9 +476,9 @@ img {
   border: none;
 }
 
-.filter-input-checkbox+label,
-.filter-input-radio+label {
-  font-family: 'PT Sans', Arial, sans-serif;
+.filter-input-checkbox + label,
+.filter-input-radio + label {
+  font-family: var(--font-ptsans);
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -488,7 +491,7 @@ img {
 }
 
 .sort-item {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: var(--font-ptsans);
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -521,7 +524,7 @@ img {
 }
 
 .pagination-item a {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: var(--font-ptsans);
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -551,7 +554,7 @@ img {
 /* Catalog*/
 
 .catalog-content-list li {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: var(--font-cuprum);
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -586,7 +589,7 @@ img {
 
 .slide:first-child {
   background-color: var(--special-yellow);
-  background-image: url(../img/guy_with\ _perforator.jpg);
+  background-image: url(../img/perforator_guy.jpg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -606,7 +609,7 @@ img {
 
 .slide:not(:first-child) {
   background-color: var(--special-yellow);
-  background-image: url(../img/guy_with\ _drill.jpg);
+  background-image: url(../img/drill_guy.jpg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -619,7 +622,7 @@ img {
 
 .goods-list li,
 .catalog-list li {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: var(--font-ptsans);
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -687,7 +690,7 @@ img {
 }
 
 .service-item {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: var(--font-cuprum);
   font-weight: 700;
   font-size: 21px;
   line-height: 30px;
@@ -741,7 +744,7 @@ img {
 /* About */
 
 .delivery-item {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: var(--font-cuprum);
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -752,7 +755,7 @@ img {
 /* Article */
 
 .article-section {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: var(--font-ptsans);
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -764,7 +767,7 @@ img {
 /* Main footer */
 
 .main-footer {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: var(--font-cuprum);
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -773,7 +776,7 @@ img {
 }
 
 .footer-phone {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: var(--font-cuprum);
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -786,7 +789,7 @@ img {
 }
 
 .footer-nav-link {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: var(--font-cuprum);
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -808,7 +811,7 @@ img {
 }
 
 .footer-bottom {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: var(--font-cuprum);
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -843,7 +846,7 @@ img {
 /* Modal */
 
 .modal {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: var(--font-cuprum);
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -859,7 +862,7 @@ img {
 
 .contact-us-form input::placeholder,
 .contact-us-form textarea::placeholder {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: var(--font-ptsans);
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -868,7 +871,7 @@ img {
 }
 
 .modal-cart {
-  font-family: 'Cuprum', Arial, sans-serif;
+  font-family: var(--font-cuprum);
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
