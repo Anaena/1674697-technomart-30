@@ -163,6 +163,7 @@ img {
 }
 
 .main-header-top {
+  margin-bottom: 46px;
   display: grid;
   grid-template-columns: 220px 300px 150px 120px 150px;
   height: 42px;
@@ -267,8 +268,9 @@ img {
 }
 
 .text-italic {
-  margin-top: 37px;
+  margin: 0;
   padding-left: 30px;
+  padding-bottom: 44.5px;
   font-family: var(--font-cuprum);
   font-style: italic;
   font-weight: 400;
@@ -278,7 +280,7 @@ img {
 }
 
 .contact-address {
-  margin-top: 35px;
+  margin: 0;
   font-family: var(--font-cuprum);
   font-style: normal;
   font-weight: 400;
@@ -302,7 +304,8 @@ img {
 }
 
 .user-account {
-  margin-top: 41px;
+  margin: 0;
+  padding-top: 7px;
   background-color: var(--user-nav-background);
 }
 
@@ -363,6 +366,7 @@ img {
 /* Main navigation */
 
 .main-nav-list {
+  margin: 0;
   font-family: var(--font-cuprum);
   font-weight: 400;
   font-size: 18px;
@@ -562,6 +566,10 @@ img {
 
 /* Filters */
 
+.page-filters {
+  margin-right: 20px;
+}
+
 .catalog-title {
   font-family: var(--font-ptsans);
   font-style: normal;
@@ -620,7 +628,6 @@ img {
 
 .sort {
   margin: 0;
-  margin-left: 20px;
   margin-bottom: 39px;
   padding: 0;
 }
@@ -693,13 +700,17 @@ img {
 
 /* Catalog*/
 
+.catalog {
+  margin-bottom: 59px;
+}
+
 .catalog-content-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 123px);
   grid-gap: 20px;
   padding: 0;
-  margin: 0 0 59px;
+  margin: 0;
 }
 
 .catalog-content-list li {
@@ -968,7 +979,7 @@ img {
 /* About */
 
 .delivery-list {
-  margin-top: 1px;
+  margin: 0;
   margin-bottom: 20px;
 }
 
@@ -985,24 +996,29 @@ img {
 .about-title,
 .contacts-title {
   margin: 0;
-}
-
-.about p,
-.contacts p {
-  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .contacts p {
   margin-bottom: 32px;
 }
+.about p {
+  margin: 0;
+}
+
+.about p:not(:nth-last-of-type(1)) {
+  margin-bottom: 24px;
+}
 
 .about p:nth-last-of-type(1) {
-  margin-bottom: 0;
+  margin-bottom: 1px;
 }
 
 /* Article */
 
+
 .article-section {
+  margin-bottom: 68px;
   font-family: var(--font-ptsans);
   font-style: normal;
   font-weight: 400;
@@ -1014,6 +1030,7 @@ img {
 
 .article-title {
   grid-column: 1 / -1;
+  padding-bottom: 25px;
 
   margin: 0;
   padding-top: 64px;
@@ -1023,10 +1040,6 @@ img {
   margin: 0;
   padding: 0;
   grid-column: 1 / -1;
-}
-
-.article-section p:nth-last-of-type(1) {
-  padding-bottom: 68px;
 }
 
 /* Contacts */
@@ -1119,6 +1132,10 @@ img {
 .footer-social-link {
   color: var(--white);
   text-decoration: none;
+}
+.footer-social-list,
+.footer-copyright {
+  margin: 0;
 }
 
 .footer-copyright:nth-child(n+2) {
