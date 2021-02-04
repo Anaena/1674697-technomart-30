@@ -80,15 +80,19 @@
           </li>
           <li class="slider catalog-item">
             <div class="slid">
-              <h3 class="slid-title">Перфораторы</h3>
-              <p class="slid-text">Настоящие мужские игрушки</p>
+              <div class="slider-shadow">
+                <h3 class="slid-title">Перфораторы</h3>
+                <p class="slid-text">Настоящие мужские игрушки</p>
+                <a class="btn slid-btn" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+              </div>
+            </div>
+            <div class="slid slid-hidden">
+              <div class="slider-shadow">
+                <h3 class="slid-title">Дрели</h3>
+                <p class="slid-text">Соседям на радость!</p>
+              </div>
               <a class="btn slid-btn" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
             </div>
-            <!-- <div class="slid slid-hidden">
-                            <h3 class="slid-title">Дрели</h3>
-                            <p class="slid-text">Соседям на радость!</p>
-                            <a class="btn slid-btn" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
-                          </div> -->
             <button class="btn btn-forward disabled" type="button">Назад</button>
             <button class="btn btn-back" type="button">Вперед</button>
             <span>Слайд 1</span>
@@ -193,31 +197,40 @@
         <h2 class="title service-title">Сервисы</h2>
         <p class="descrtiption service-descrtiption">Хороший интернет-магазин отличается от плохого не только ценами!</p>
         <p class="descrtiption service-descrtiption">Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        <ul class="service-list">
-          <li class="service-item active">
-            Доставка
-            <article class="delivery">
+        <input class="display-none" type="radio" name="page" value="1" id="page-1" checked />
+        <input class="display-none" type="radio" name="page" value="2" id="page-2" />
+        <input class="display-none" type="radio" name="page" value="3" id="page-3" />
+        <div class="column-section">
+          <nav class="service-nav">
+            <ul class="service-list">
+              <li class="service-item active"><label for="page-1"> Доставка</label></li>
+              <li class="service-item passive"><label for="page-2">Гарантия</label></li>
+              <li class="service-item passive"><label for="page-3">Кредит</label></li>
+            </ul>
+          </nav>
+          <div class="service-pages">
+            <div class="service-page page-delivery">
               <h3 class="title">Доставка</h3>
-              <p class="descrtiption service-descrtiption">Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
-            </article>
-          </li>
-          <li class="service-item passive">
-            Гарантия
-            <article class="guarantee">
+              <p class="descrtiption service-descrtiption">Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду
+                совершенно бесплатно!<br> Ведь мы
+                неплохо заработаем,<br> поднимая его на ваш этаж!</p>
+            </div>
+            <div class="service-page page-guarantee">
               <h3 class="title">Гарантия</h3>
-              <p class="descrtiption service-descrtiption">Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его<br> возгоранием, вы всегда можете быть уверены в нашей<br> гарантии. Мы обменяем сгоревший товар на новый<br> Дом уж восстановите как-нибудь сами.</p>
-            </article>
-          </li>
-          <li class="service-item passive">
-            Кредит
-            <article class="credit">
+              <p class="descrtiption service-descrtiption">Если купленный у нас товар поломается или заискрит,<br> а также в
+                случае пожара, спровоцированного
+                его<br> возгоранием, вы всегда можете быть уверены в нашей<br> гарантии. Мы обменяем сгоревший товар на
+                новый<br> Дом уж восстановите как-нибудь сами.</p>
+            </div>
+            <div class="service-page page-credit">
               <h3 class="title">Кредит</h3>
-              <p class="descrtiption service-descrtiption">Залезть в долговую яму стало проще!<br> Кредитные консультанты придут вам на помощь.</p>
+              <p class="descrtiption service-descrtiption">Залезть в долговую яму стало проще!<br> Кредитные консультанты придут
+                вам на помощь.</p>
               <a class="btn credit-btn" href="#">ОТПРАВИТЬ ЗАЯВКУ</a>
-            </article>
-          </li>
-        </ul>
-      </div>
+            </div>
+          </div>
+        </div>
+        </div>
     </section>
 
     <div class="index-columns container">
