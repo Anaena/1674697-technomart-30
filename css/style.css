@@ -270,7 +270,7 @@ img {
 .text-italic {
   margin: 0;
   padding-left: 30px;
-  padding-bottom: 44.5px;
+  padding-bottom: 45px;
   font-family: var(--font-cuprum);
   font-style: italic;
   font-weight: 400;
@@ -430,7 +430,7 @@ img {
   background-color: var(--basic-red);
 }
 
-.slid-btn {
+.slide-btn {
   padding: 11px 46px 9px;
   align-self: center;
 }
@@ -442,12 +442,12 @@ img {
   align-self: center;
 }
 
-.slid-btn:hover,
-.slid-btn:focus {
+.slide-btn:hover,
+.slide-btn:focus {
   background-color: var(--focus-red);
 }
 
-.slid-btn:active {
+.slide-btn:active {
   background-color: var(--error);
 }
 
@@ -514,7 +514,7 @@ img {
 
 .about-btn {
   margin-bottom: 20px;
-  padding: 11px 40.29px 9px 39.71px;
+  padding: 11px 40px 9px 40px;
 }
 
 .contact-btn {
@@ -756,7 +756,7 @@ img {
   background-color: var(--special-yellowlight);
 }
 
-.slid:first-child {
+.slide:first-child {
   background-color: var(--special-yellow);
   background-image: url(../img/perforator_guy.jpg);
   background-repeat: no-repeat;
@@ -768,11 +768,11 @@ img {
   grid-row: 2 / 4;
 }
 
-.slid {
+.slide {
   height: 266px;
 }
 
-.slid-title {
+.slide-title {
   margin: 0;
   padding-top: 23px;
   padding-bottom: 5px;
@@ -783,7 +783,7 @@ img {
   text-transform: uppercase;
 }
 
-.slid-text {
+.slide-text {
   margin: 0;
   padding-bottom: 113px;
   font-weight: 400;
@@ -791,7 +791,7 @@ img {
   line-height: 24px;
 }
 
-.slid:not(:first-child) {
+.slide:not(:first-child) {
   background-color: var(--special-yellow);
   background-image: url(../img/drill_guy.jpg);
   background-repeat: no-repeat;
@@ -805,7 +805,7 @@ img {
   background-position: 100% 35%;
 }
 
-.slid-hidden {
+.slide-hidden {
   display: none;
 }
 
