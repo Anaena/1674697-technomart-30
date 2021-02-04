@@ -253,7 +253,7 @@ img {
 } */
 
 .order {
-  padding: 10px 16px 8px 19px;
+  padding: 9px 17px;
   background-color: var(--basic-green);
   align-self: start;
 }
@@ -311,7 +311,11 @@ img {
 
 .user-account-link {
   margin-bottom: 17px;
-  padding: 12px 10px 12px 21px;
+  padding: 12px 19px 12px 45px;
+}
+
+.user-account-link .login-link {
+  padding: 12px 24px;
 }
 
 .user-account-link,
@@ -431,14 +435,14 @@ img {
 }
 
 .slide-btn {
-  padding: 11px 46px 9px;
+  padding: 10px 46px;
   align-self: center;
 }
 
 .goods-btn,
 .manufacturer-btn {
   margin-right: 14px;
-  padding: 11px 24px 9px;
+  padding: 10px 24px;
   align-self: center;
 }
 
@@ -460,7 +464,7 @@ img {
 }
 
 .filter-button {
-  padding: 10px 79.57px 10px 78.43px;
+  padding: 10px 79px;
   font-size: 13px;
   color: var(--black);
   background: var(--white);
@@ -509,16 +513,16 @@ img {
 }
 
 .credit-btn {
-  padding: 11px 45px 10px 44px;
+  padding: 10px 45px;
 }
 
 .about-btn {
   margin-bottom: 20px;
-  padding: 11px 40px 9px 40px;
+  padding: 10px 40px;
 }
 
 .contact-btn {
-  padding: 11px 61.12px 9px 61.88px;
+  padding: 10px 61px;
 }
 
 .submit-btn {
@@ -931,7 +935,8 @@ img {
 
 .service-page .title {
   margin: 0;
-  padding-top: 10px;padding-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 
 .service-descrtiption {
@@ -960,7 +965,7 @@ nav .service-list {
 }
 
 nav .service-item {
-  padding: 13.5px 139px 17.5px 22px;
+  padding: 13px 139px 18px 22px;
   font-family: var(--font-cuprum);
   font-weight: 700;
   font-size: 21px;
