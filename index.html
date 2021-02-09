@@ -20,6 +20,7 @@
       </a>
       <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
         <input class="search" type="search" placeholder="Поиск:">
+        <button class="search-btn" type="submit"></button>
       </form>
       <a class="user-nav bookmarks" href="blank.html">Закладки: 0</a>
       <a class="user-nav shopping-cart" href="blank.html">Корзина: 0</a>
@@ -29,10 +30,10 @@
       <section class="main-header-middle">
         <h2 class="visually-hidden">Контакты и вход в личный кабинет</h2>
         <p class="text-italic">Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</p>
-        <p class="contact-address">
-          <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a><br>
-          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-        </p>
+        <div class="contact-info">
+          <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          <p class="contact-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        </div>
         <div class="user-account">
           <a class="user-account-link login-link" href="blank.html">Войти</a>
           <a class="user-account-link registration-link" href="blank.html">Регистрация</a>
@@ -58,23 +59,23 @@
       <section class="catalog">
         <h2 class="visually-hidden">Каталог</h2>
         <ul class="catalog-content-list">
-          <li class="catalog-content-item catalog-materials">
+          <li class="catalog-content-item catalog-materials new-badge">
             <h3 class="catalog-content-title">Материалы</h3>
             <a class="btn catalog-btn" href="#">на любой вкус</a>
           </li>
           <li class="catalog-content-item catalog-tools">
-            <h3 class="catalog-content-title">Инструменты</h3>
+            <h3 class="catalog-content-title">Инструмент</h3>
             <a class="btn catalog-btn" href="#">НА ВСЕ СЛУЧАИ</a>
           </li>
-          <li class="catalog-item catalog-technic">
+          <li class="catalog-content-item catalog-technic">
             <h3 class="catalog-content-title">Техника</h3>
             <a class="btn catalog-btn" href="#">для стройки</a>
           </li>
-          <li class="catalog-item catalog-discount">
+          <li class="catalog-content-item catalog-discount">
             <h3 class="catalog-content-title">Скидки 50%</h3>
             <a class="btn catalog-btn" href="#">На 350 ТОВАРОВ</a>
           </li>
-          <li class="catalog-item catalog-delivery">
+          <li class="catalog-content-item catalog-delivery">
             <h3 class="catalog-content-title">Доставка</h3>
             <a class="btn catalog-btn" href="#">Бесплатно</a>
           </li>
@@ -83,7 +84,7 @@
               <div class="slider-shadow">
                 <h3 class="slide-title">Перфораторы</h3>
                 <p class="slide-text">Настоящие мужские игрушки</p>
-                <a class="btn slid-btn" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+                <a class="btn slide-btn" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
               </div>
             </div>
             <div class="slide slide-hidden">
@@ -91,7 +92,7 @@
                 <h3 class="slide-title">Дрели</h3>
                 <p class="slide-text">Соседям на радость!</p>
               </div>
-              <a class="btn slid-btn" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+              <a class="btn slide-btn" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
             </div>
             <button class="btn btn-forward disabled" type="button">Назад</button>
             <button class="btn btn-back" type="button">Вперед</button>
@@ -108,29 +109,33 @@
         </div>
         <ul class="goods-list">
           <li class="goods-item">
+            <div class="img-box">
             <img class="catalog-item-image" src="img/Bosch_BFG-900.jpg" width="184" height="164"
-              alt="Перфоратор BOSCH BFG 9000">
+              alt="Перфоратор BOSCH BFG 9000"></div>
             <p class="catalog-item-title">Перфоратор BOSCH<br> BFG 9000</p>
             <s class="last-price">32500 Р.</s>
             <button class="sans-btn price-btn">25500 Р.</button>
           </li>
-          <li class="goods-item">
+          <li class="goods-item  new-badge">
+            <div class="img-box">
             <img class="catalog-item-image" src="img/Bosch_BFG-300.jpg" width="127" height="112"
-              alt="Перфоратор BOSCH BFG 3000">
+              alt="Перфоратор BOSCH BFG 3000"></div>
             <p class="catalog-item-title">Перфоратор BOSCH<br> BFG 3000</p>
             <s class="last-price">22500 Р.</s>
             <button class="sans-btn price-btn">15500 Р.</button>
           </li>
           <li class="goods-item">
+            <div class="img-box">
             <img class="catalog-item-image" src="img/Bosch_BFG-600.jpg" width="144" height="128"
-              alt="Перфоратор BOSCH BFG 6000">
+              alt="Перфоратор BOSCH BFG 6000"></div>
             <p class="catalog-item-title">Перфоратор BOSCH<br> BFG 6000</p>
             <s class="last-price">32500 Р.</s>
             <button class="sans-btn price-btn">25500 Р.</button>
           </li>
-          <li class="goods-item">
+          <li class="goods-item  new-badge">
+            <div class="img-box">
             <img class="catalog-item-image" src="img/Bosch_BFG-200.jpg" width="127" height="112"
-              alt="Перфоратор BOSCH BFG 2000">
+              alt="Перфоратор BOSCH BFG 2000"></div>
             <p class="catalog-item-title">Перфоратор BOSCH<br> BFG 2000</p>
             <s class="last-price">22500 Р.</s>
             <button class="sans-btn price-btn">12500 Р.</button>
@@ -212,14 +217,12 @@
             <div class="service-page page-delivery">
               <h3 class="title">Доставка</h3>
               <p class="descrtiption service-descrtiption">Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду
-                совершенно бесплатно!<br> Ведь мы
-                неплохо заработаем,<br> поднимая его на ваш этаж!</p>
+                совершенно бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
             </div>
             <div class="service-page page-guarantee">
               <h3 class="title">Гарантия</h3>
               <p class="descrtiption service-descrtiption">Если купленный у нас товар поломается или заискрит,<br> а также в
-                случае пожара, спровоцированного
-                его<br> возгоранием, вы всегда можете быть уверены в нашей<br> гарантии. Мы обменяем сгоревший товар на
+                случае пожара, спровоцированного его<br> возгоранием, вы всегда можете быть уверены в нашей<br> гарантии. Мы обменяем сгоревший товар на
                 новый<br> Дом уж восстановите как-нибудь сами.</p>
             </div>
             <div class="service-page page-credit">
@@ -272,19 +275,21 @@
           <a class="footer-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
         </p>
       </section>
-      <nav class="footer-nav">
+      <div class="footer-nav">
         <ul class="footer-nav-list">
           <li class="footer-nav-item"><a class="footer-nav-link" href="blank.html">Компания</a></li>
           <li class="footer-nav-item"><a class="footer-nav-link" href="blank.html">Новости</a></li>
           <li class="footer-nav-item"><a class="footer-nav-link" href="catalog.html">Каталог</a></li>
           <li class="footer-nav-item"><a class="footer-nav-link" href="blank.html">Доставка</a></li>
           <li class="footer-nav-item"><a class="footer-nav-link" href="blank.html">Контакты</a></li>
-          <li class="footer-nav-item"><a class="footer-nav-link" href="blank.html">Материалы</a></li>
-          <li class="footer-nav-item"><a class="footer-nav-link" href="blank.html">Техника</a></li>
-          <li class="footer-nav-item"><a class="footer-nav-link" href="blank.html">Инструменты</a></li>
-          <li class="footer-nav-item"><a class="footer-nav-link" href="blank.html">Спецпредложения</a></li>
         </ul>
-      </nav>
+        <ul class="footer-catalog-list">
+          <li class="footer-catalog-item"><a class="footer-nav-link" href="blank.html">Материалы</a></li>
+          <li class="footer-catalog-item"><a class="footer-nav-link" href="blank.html">Техника</a></li>
+          <li class="footer-catalog-item"><a class="footer-nav-link" href="blank.html">Инструменты</a></li>
+          <li class="footer-catalog-item"><a class="footer-nav-link" href="blank.html">Спецпредложения</a></li>
+        </ul>
+      </div>
     </div>
     <div class="footer-bottom">
       <p class="footer-copyright">
@@ -330,13 +335,19 @@
   <section class="modal modal-contact-us">
     <h2 class="visually-hidden">Напишите нам</h2>
     <form class="contact-us-form" action="https://echo.htmlacademy.ru" method="post">
-      <label class="user-name" for="name">Ваше имя:</label>
-      <input class="user-name" id="name" type="text" name="name" placeholder="Имя Фамилия">
-      <label class="user-email" for="email">Ваш e-mail:</label>
-      <input class="user-email" id="email" type="email" name="email" placeholder="email@example.com">
-      <label class="message" for="text">Текст письма:</label>
-      <textarea class="message" id="text" rows="5" cols="60" name="text" placeholder="В свободной форме"></textarea>
-      <button class="btn submit-btn" type="submit">Отправить</button>
+      <div class="half-width">
+        <label class="user-name" for="name">Ваше имя:</label>
+        <input class="user-name" id="name" type="text" name="name" placeholder="Имя Фамилия">
+      </div>
+      <div class="half-width">
+        <label class="user-email" for="email">Ваш e-mail:</label>
+        <input class="user-email" id="email" type="email" name="email" placeholder="email@example.com">
+      </div>
+      <label class="message" for="review">Текст письма:</label>
+      <textarea class="message" id="review" rows="5" name="text" placeholder="В свободной форме"></textarea>
+      <div>
+        <button class="btn submit-btn" type="submit">Отправить</button>
+      </div>
     </form>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
