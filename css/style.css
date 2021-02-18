@@ -1236,11 +1236,7 @@ border: 0;
 .price-controls input {
   width: 75px;
   padding: 10px;
-  margin: 0;
   margin-left: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-       appearance: none;
   font-family: var(--font-ptsans);
   font-style: normal;
   font-weight: 400;
@@ -1251,6 +1247,13 @@ border: 0;
   background: var(--basic-filter);
   border: none;
   border-radius: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+  margin: 0;
 }
 
 .price-controls span {
