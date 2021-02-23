@@ -659,26 +659,23 @@ img {
   list-style: none;
 }
 
-.main-nav-item {
+.main-nav-list a {
   display: block;
+  color: var(--white);
+  text-decoration: none;
   padding: 16px 28px 20px;
 }
 
-.main-nav-item:nth-of-type(1) {
+.main-nav-item:nth-of-type(1) a{
   padding: 16px 28px 20px 53px;
 }
 
-.main-nav-item:nth-last-of-type(1) {
+.main-nav-item:nth-last-of-type(1) a {
   padding: 16px 53px 20px 28px;
 }
 
-.main-nav-list a {
-  color: var(--white);
-  text-decoration: none;
-}
-
 .main-nav-item:hover,
-.main-nav-item:focus {
+.main-nav-item a:focus {
   background-color: var(--footer-background);
   -webkit-box-shadow: inset 0px -5px 0px var(--footer-background);
           box-shadow: inset 0px -5px 0px var(--footer-background);
@@ -2253,6 +2250,7 @@ nav .service-item {
 .contacts p {
   margin-bottom: 32px;
 }
+
 .about-description {
   line-height: 24px;
   margin: 0;
@@ -2303,8 +2301,12 @@ nav .service-item {
 }
 
 .contacts-img {
-  margin-bottom: 29px;
   background-color: var(--linen);
+}
+
+.city-map {
+  display: block;
+  margin-bottom: 29px;
 }
 
 /* Main footer */
