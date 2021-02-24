@@ -1010,15 +1010,15 @@ border: 0;
 }
 
 .breadcrumbs li:first-child {
-  margin-right: 56px;
+  margin-right: 42px;
 }
 
 .breadcrumbs li:nth-of-type(2) {
-  margin-right: 36px;
+  margin-right: 40px;
 }
 
 .breadcrumbs li:nth-of-type(3) {
-  margin-right: 39px;
+  margin-right: 43px;
 }
 
 .breadcrumbs li::after {
@@ -1026,16 +1026,6 @@ border: 0;
   position: absolute;
   top: 4px;
   right: -25px;
-  width: 8px;
-  height: 12px;
-  background-image: url(../img/icon/icon-right-small.svg);
-}
-
-.breadcrumbs li:first-child::after {
-  content: "";
-  position: absolute;
-  top: 4px;
-  right: -36px;
   width: 8px;
   height: 12px;
   background-image: url(../img/icon/icon-right-small.svg);
@@ -1049,6 +1039,12 @@ border: 0;
   height: 12px;
   background-image: url(../img/icon/icon-home.svg);
   cursor: pointer;
+}
+
+.breadcrumbs-link {
+  display: inline-block;
+  width: 14px;
+  height: 100%;
 }
 
 .breadcrumbs li:last-child {
@@ -1168,7 +1164,7 @@ border: 0;
 }
 
 .filter-item:nth-of-type(3) .filter-heading {
-  margin-bottom: 22px;
+  margin-bottom: 23px;
 }
 
 .filters-title {
@@ -1288,7 +1284,7 @@ input[type="number"] {
 }
 
 .filter-radio:not(:nth-last-of-type(1)) {
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 
 .filter-option {
