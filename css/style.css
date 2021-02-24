@@ -534,6 +534,11 @@ img {
   position: relative;
 }
 
+.logout-link {
+  width: 47px;
+  height: 42%;
+}
+
 .account-link-icon {
   position: absolute;
   top: 15px;
@@ -583,10 +588,10 @@ img {
 
 .login-link:hover + .login-link-icon,
 .login-link:focus + .login-link-icon,
-.account-link-icon:focus,
-.account-link-icon:hover,
-.logout-link-icon:focus,
-.logout-link-icon:hover {
+.account-link:hover  .account-link-icon,
+.account-link:focus  .account-link-icon,
+.logout-link:focus .logout-link-icon,
+.logout-link:hover .logout-link-icon {
   fill: var(--basic-grey);
 }
 
@@ -611,8 +616,8 @@ img {
 
 .unauthorized .user-account-link:active,
 .login-link:active + .login-link-icon,
-.account-link-icon:active,
-.logout-link-icon:active,
+.account-link:focus:active .account-link-icon,
+.logout-link:focus:active .logout-link-icon,
 .account .account-link:active,
 .user-nav:active,
 .user-link:active {
@@ -978,6 +983,14 @@ border: 0;
 /* Breadcrumbs */
 
 .breadcrumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0;
   margin-bottom: 22px;
   padding: 0;
@@ -992,7 +1005,6 @@ border: 0;
 }
 
 .breadcrumbs li {
-  display: inline;
   position: relative;
   margin-right: 41px;
 }
@@ -1050,6 +1062,12 @@ border: 0;
 .breadcrumbs a {
   text-decoration: none;
   color: var(--black);
+  outline: none;
+}
+
+.breadcrumbs a:focus,
+.breadcrumbs a:active {
+  border: 1px solid var(--black);
 }
 
 /* Filters */
