@@ -1952,13 +1952,7 @@ nav .sort-type {
   width: 220px;
   height: 164px;
   margin: 0 0 3px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1968,6 +1962,23 @@ nav .sort-type {
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
+}
+
+.goods-item-card:hover .catalog-item-image,
+.goods-item-card:focus .catalog-item-image {
+  display: none;
+}
+.goods-item-card:hover .hover-card,
+.goods-item-card:focus:focus .hover-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: var(--white);
+  z-index: 5;
 }
 
 /* Manufacturer*/
