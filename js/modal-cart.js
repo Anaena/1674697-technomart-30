@@ -1,10 +1,13 @@
+(function () {
 const modalCart = document.querySelector('.modal-cart');
-const openPopupButton = document.querySelector('.btn-buy');
+const openPopupButtons = document.querySelectorAll('.btn-buy');
 const closePopupButton = modalCart.querySelector('.modal-close');
 
-openPopupButton.addEventListener('click', function () {
-  modalCart.classList.add('modal--show');
-});
+openPopupButtons.forEach(btn =>
+  btn.addEventListener('click', function () {
+    modalCart.classList.add('modal--show');
+  })
+);
 
 closePopupButton.addEventListener('click', function () {
   modalCart.classList.remove('modal--show');
@@ -16,4 +19,5 @@ newLocal('keydown', function (evt) {
   modalCart.classList.remove('modal--show');
   }
 });
+}());
 
