@@ -761,7 +761,7 @@ img {
 .btn-back,
 .btn-forward {
   position: relative;
-  top: 127px;
+  top: 123px;
   width: 22px;
   height: 40px;
 }
@@ -775,8 +775,8 @@ img {
 .btn-forward::before {
   content: "";
   position: absolute;
-  top: -5px;
-  left: -2px;
+  top: 0px;
+  left: 1px;
   width: 22px;
   height: 40px;
   -webkit-box-pack: center;
@@ -803,7 +803,7 @@ border: 0;
   content: "";
   position: absolute;
   top: -5px;
-  left: 0;
+  left: 3px;
   width: 22px;
   height: 40px;
   -webkit-box-pack: center;
