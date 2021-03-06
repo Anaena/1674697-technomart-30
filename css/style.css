@@ -794,7 +794,8 @@ img {
 }
 
 .btn-back {
-left: -23px;
+left: 550px;
+top: 126px;
 background-color: transparent;
 border: 0;
 }
@@ -802,7 +803,7 @@ border: 0;
 .btn-back::before {
   content: "";
   position: absolute;
-  top: -5px;
+  top: -2px;
   left: 3px;
   width: 22px;
   height: 40px;
@@ -847,6 +848,7 @@ border: 0;
   color: var(--black);
   background: var(--white);
   border: 1px solid var(--whisper);
+  cursor: pointer;
 }
 
 .btn-sort {
@@ -1690,9 +1692,13 @@ nav .sort-type {
   -ms-grid-row: 2;
   -ms-grid-row-span: 2;
   grid-row: 2 / 4;
+  width: 620px;
+  height: 266px;
+  position: relative;
+  overflow: hidden;
 }
 
-.slide:first-child {
+.slide--1 {
   background-color: var(--special-yellow);
   background-image: url(../img/perforator_guy.jpg);
   background-repeat: no-repeat;
@@ -1705,7 +1711,7 @@ nav .sort-type {
   height: 266px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-orient: vertical;
@@ -1739,11 +1745,11 @@ nav .sort-type {
   text-align: start;
 }
 
-.slide:not(:first-child) {
+.slide--2 {
   background-color: var(--special-yellow);
   background-image: url(../img/drill_guy.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .slider-shadow {
@@ -1751,22 +1757,6 @@ nav .sort-type {
   padding-left: 24px;
   background: var(--slider-shadow);
   background-position: 100% 35%;
-}
-
-.slide-hidden {
-  display: none;
-}
-
-.slider-controls  {
-  position: relative;
-  z-index: 20;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 620px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .slide-wheel {
@@ -1783,7 +1773,7 @@ nav .sort-type {
   left: 295px;
 }
 
-.slide-wheel span {
+.dot {
   padding: 0;
   width: 4px;
   height: 4px;
@@ -1793,8 +1783,12 @@ nav .sort-type {
   background-color: var(--basic-red);
 }
 
-.slide-wheel .current-slide {
+.dot--active {
   background-color: var(--white);
+}
+
+.slide--show {
+  display: flex;
 }
 
 /* Goods */
@@ -2102,6 +2096,10 @@ nav .service-item {
   font-weight: 700;
   font-size: 21px;
   line-height: 30px;
+  color: var(--white);
+  background: var(--grey);
+  -webkit-box-shadow: 0px 1px 0px var(--footer-background), inset 0px 1px 0px var(--service-hover);
+          box-shadow: 0px 1px 0px var(--footer-background), inset 0px 1px 0px var(--service-hover);
 }
 
 .service-nav label {
@@ -2134,9 +2132,9 @@ nav .service-item {
           align-items: center;
 }
 
-#page-1:checked ~ .service-pages .page-delivery,
-#page-2:checked ~ .service-pages .page-guarantee,
-#page-3:checked ~ .service-pages .page-credit {
+#page-1:checked ~ .page-delivery,
+#page-2:checked ~ .page-guarantee,
+#page-3:checked ~ .page-credit {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2149,7 +2147,6 @@ nav .service-item {
   -webkit-box-shadow: 0px 1px 0px var(--footer-background), inset 0px 1px 0px var(--service-hover);
           box-shadow: 0px 1px 0px var(--footer-background), inset 0px 1px 0px var(--service-hover);
 }
-
 
 .service-item:active {
   color: var(--grey);
@@ -2172,13 +2169,6 @@ nav .service-item {
   background: var(--white);
   -webkit-box-shadow: 0px 1px 0px var(--white), inset 0px 1px 0px var(--white);
           box-shadow: 0px 1px 0px var(--white), inset 0px 1px 0px var(--white);
-}
-
-.passive {
-  color: var(--white);
-  background: var(--grey);
-  -webkit-box-shadow: 0px 1px 0px var(--footer-background), inset 0px 1px 0px var(--service-hover);
-          box-shadow: 0px 1px 0px var(--footer-background), inset 0px 1px 0px var(--service-hover);
 }
 
 .page-delivery {
@@ -2214,6 +2204,10 @@ nav .service-item {
 
 .page-credit .service-description {
   padding-bottom: 35px;
+}
+
+.service-page {
+  animation: scale 0.7s ease-in-out;
 }
 
 /* Index columns */
@@ -2913,5 +2907,20 @@ nav .service-item {
   80% {
     -webkit-transform: translateX(10px);
             transform: translateX(10px);
+  }
+}
+
+@keyframes scale {
+  0% {
+  transform: scale(0.9);
+  opacity: 0;
+  }
+  50% {
+  transform: scale(1.005);
+  opacity: 0.5;
+  }
+  100% {
+  transform: scale(1);
+  opacity: 1;
   }
 }
