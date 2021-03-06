@@ -1,3 +1,4 @@
+(function () {
 const mapLink = document.querySelector('.city-map');
 const mapPopup = document.querySelector('.modal-map');
 const mapClose = mapPopup.querySelector('.modal-close');
@@ -20,3 +21,4 @@ window.addEventListener('keydown', function (evt) {
     }
   }
 });
+}());

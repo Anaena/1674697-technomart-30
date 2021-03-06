@@ -1,3 +1,4 @@
+(function () {
 const contactBtn = document.querySelector('.contact-btn');
 const modalContactUs = document.querySelector('.modal-contact-us');
 const closePopupButton = modalContactUs.querySelector('.modal-close');
@@ -37,3 +38,4 @@ window.addEventListener('keydown', function (evt) {
     }
   }
 });
+}());
