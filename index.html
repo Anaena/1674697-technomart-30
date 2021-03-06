@@ -111,27 +111,25 @@
             <a class="btn catalog-btn" href="#" aria-label="Подробнее о доставке">Бесплатно</a>
           </li>
           <li class="slider">
-            <div class="slide">
+            <div class="slide slide--1 slide--show">
               <div class="slider-shadow">
                 <h3 class="slide-title">Перфораторы</h3>
                 <p class="slide-text">Настоящие мужские игрушки</p>
               </div>
               <a class="btn slide-btn" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
             </div>
-            <div class="slide slide-hidden">
+            <div class="slide slide--2">
               <div class="slider-shadow">
                 <h3 class="slide-title">Дрели</h3>
                 <p class="slide-text">Соседям на радость!</p>
               </div>
               <a class="btn slide-btn" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
             </div>
-            <div class="slider-controls">
-              <button class="btn-forward disabled" aria-label="Первый слайд" type="button"></button>
-              <button class="btn-back" aria-label="Второй слайд" type="button"></button>
-              <div class="slide-wheel">
-                <span class="current-slide"></span>
-                <span></span>
-              </div>
+            <button class="btn-forward disabled" aria-label="Первый слайд" type="button"></button>
+            <button class="btn-back" aria-label="Второй слайд" type="button"></button>
+            <div class="slide-wheel">
+              <span class="dot dot--active"></span>
+              <span class="dot"></span>
             </div>
           </li>
         </ul>
@@ -267,9 +265,9 @@
         <div class="column-section">
           <nav class="service-nav">
             <ul class="service-list">
-              <li class="service-item active"><label for="page-1"> Доставка</label></li>
-              <li class="service-item passive"><label for="page-2">Гарантия</label></li>
-              <li class="service-item passive"><label for="page-3">Кредит</label></li>
+              <li class="service-item"><label class="active" for="page-1"> Доставка</label></li>
+              <li class="service-item"><label for="page-2">Гарантия</label></li>
+              <li class="service-item"><label for="page-3">Кредит</label></li>
             </ul>
           </nav>
           <div class="service-pages">
@@ -434,6 +432,8 @@
   <script src="js/modal-form.js"></script>
   <script src="js/modal-cart.js"></script>
   <script src="js/map.js"></script>
+  <script src="js/slide.js"></script>
+  <script src="js/slide-service.js"></script>
 
 </body>
 
