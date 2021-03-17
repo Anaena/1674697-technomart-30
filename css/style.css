@@ -1046,7 +1046,7 @@ img {
 
 .breadcrumbs-link {
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: middle;
   width: 14px;
   height: 100%;
 }
@@ -1411,7 +1411,7 @@ input[type="number"] {
 
 .catalog-container nav {
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: middle;
 }
 
 .sort {
