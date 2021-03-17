@@ -300,7 +300,8 @@ img {
   border: none;
 }
 
-.search:hover+.search-icon {
+.search:hover+.search-icon,
+.search-icon:hover {
   fill: var(--white);
 }
 
@@ -498,7 +499,7 @@ img {
 .account {
   margin-bottom: 9px;
   width: 299px;
-  height: 45px;
+  min-height: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2370,6 +2371,10 @@ nav .sort-type {
   padding-left: 3px;
 }
 
+.footer-contacts {
+  max-width: 324px;
+}
+
 .footer-contact-info p {
   margin: 0;
   padding: 0;
@@ -2410,16 +2415,17 @@ nav .sort-type {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  justify-content: flex-end;
   list-style: none;
 }
 
-.footer-nav-list li:not(:nth-last-of-type(1)),
-.footer-catalog-list li:not(:nth-last-of-type(1)) {
-  padding-right: 58px;
+.footer-nav-list li:not(:nth-of-type(1)),
+.footer-catalog-list li:not(:nth-of-type(1)) {
+  padding-left: 58px;
 }
 
 .footer-catalog-list li:nth-of-type(2) {
-  padding-right: 62px;
+  padding-left: 62px;
 }
 
 .footer-nav-link {
@@ -2449,8 +2455,8 @@ nav .sort-type {
 .footer-bottom {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 388px 134px 255px 159px;
-  grid-template-columns: 388px 134px 255px 159px;
+  -ms-grid-columns: 345px 220px 212px 159px;
+  grid-template-columns: 345px 220px 212px 159px;
   padding-top: 35px;
   padding-bottom: 27px;
   -webkit-box-pack: center;
@@ -2465,6 +2471,10 @@ nav .sort-type {
   background-color: var(--footer-background);
 }
 
+/* .footer-social {
+  justify-self: flex-end;
+} */
+
 .footer-social-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2473,8 +2483,8 @@ nav .sort-type {
   flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
-  width: 134px;
+  justify-content: center;
+  min-width: 134px;
   margin: 0 auto;
   padding: 0;
   list-style: none;
